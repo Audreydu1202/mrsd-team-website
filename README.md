@@ -1,24 +1,24 @@
 # CMU MRSD Team Website
 
-A lightweight, accessible single-page website introducing a five-person Carnegie Mellon University Master of Science in Robotic Systems Development team. The site contains three sections: Team Intro, People, and Technical Coverage.
+A lightweight, accessible single-page website introducing a five-person Carnegie Mellon University Master of Science in Robotic Systems Development team. The site contains a compact team overview, a sponsor-facing Team at a Glance section, and detailed member profiles.
 
 ## Structure
 
-- `index.html` — team introduction, member profiles, technical coverage, and metadata
+- `index.html` — team overview, Team at a Glance, member profiles, and metadata
 - `styles.css` — responsive visual system and component styles
-- `script.js` — mobile navigation, active-section highlighting, reveal effects, and back-to-top behavior
+- `script.js` — minimal mobile-navigation behavior
 - `assets/icons/favicon.svg` — custom team monogram
 - `assets/team/` — add profile photos here when approved for public use
 - `.nojekyll` — serves the static files directly on GitHub Pages
 
 ## Updating profiles
 
-Member content is grouped in the `#people` section of `index.html`. Each profile is an `<article class="person">` with a one-sentence summary followed by the member's background, strengths, experience, project interests, and links. Omit missing fields rather than guessing.
+Member content is grouped in the `#members` section of `index.html`. Each profile is an `<article class="member-card">` containing the member's photo, background, strengths, experience, project interests, and available links. Omit missing fields rather than guessing.
 
-To add a public profile photo, place an optimized JPG or WebP in `assets/team/` (for example, `anderlin-huang.webp`) and replace the member's initials block with:
+To add a public profile photo, place an optimized JPG or WebP in `assets/team/` and replace the member's initials block with:
 
 ```html
-<img class="portrait" src="assets/team/anderlin-huang.webp" alt="Portrait of Cheng-Ning (Anderlin) Huang">
+<img class="member-photo" src="assets/team/member-name.jpg" alt="Member Name" loading="lazy">
 ```
 
 Use a square image of at least 600 × 600 pixels and keep files below roughly 300 KB when practical.
