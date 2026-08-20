@@ -57,6 +57,8 @@ h1 { margin: 0; max-width: 920px; font-size: clamp(2.25rem, 3.2vw, 2.5rem); lett
 .member-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
 .member-card { display: flex; min-width: 0; flex-direction: column; padding: 26px; background: var(--white); border: 1px solid var(--line); transition: transform .18s ease, border-color .18s ease; }
 .member-card:hover { transform: translateY(-2px); border-color: var(--line-strong); }
+.member-card.reveal-ready { opacity: 0; transform: translateY(22px) scale(.99); }
+.member-card.reveal-ready.revealed { animation: profile-reveal .62s cubic-bezier(.2, .75, .25, 1) both; animation-delay: var(--reveal-delay, 0ms); }
 .member-card:last-child { grid-column: 1 / -1; width: calc(50% - 11px); justify-self: center; }
 .member-header { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 20px; align-items: start; margin-bottom: 24px; }
 .member-photo-wrap { width: 120px; aspect-ratio: 4 / 5; overflow: hidden; align-self: start; border: 1px solid var(--line); border-radius: 6px; background: #e9e7e2; }
@@ -87,6 +89,13 @@ details[open] summary span { transform: rotate(45deg); }
 footer { padding: 30px 0; background: var(--white); border-top: 1px solid var(--line); }
 footer .shell { display: flex; justify-content: space-between; gap: 24px; color: var(--muted); font-size: .78rem; }
 footer strong { color: var(--ink); }
+
+@keyframes profile-reveal {
+  0% { opacity: 0; transform: translateY(22px) scale(.99); }
+  68% { opacity: 1; transform: translateY(-4px) scale(1); }
+  84% { transform: translateY(2px) scale(1); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
 
 @media (max-width: 900px) {
   .overview-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
@@ -125,6 +134,8 @@ footer strong { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
+  .member-card.reveal-ready,
+  .member-card.reveal-ready.revealed { opacity: 1; transform: none; animation: none; }
 }
 
 @media print {
