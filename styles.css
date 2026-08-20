@@ -34,10 +34,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .nav-toggle span[aria-hidden] { display: block; width: 21px; height: 2px; margin: 6px auto; background: var(--ink); transition: transform .18s ease; }
 
 .overview { padding: 52px 0 48px; border-bottom: 1px solid var(--line); }
-.overview-header { max-width: 760px; margin-bottom: 32px; }
+.overview-header { max-width: 980px; margin-bottom: 32px; }
 .eyebrow { margin: 0 0 12px; color: var(--burgundy); font-size: .69rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
-h1 { margin: 0; font-size: clamp(3rem, 5vw, 3.5rem); letter-spacing: -.045em; line-height: 1.04; }
-.overview-intro { max-width: 720px; margin: 16px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+h1 { margin: 0; font-size: clamp(2.5rem, 4vw, 3rem); letter-spacing: -.04em; line-height: 1.1; }
 .overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
 .overview-card { min-width: 0; padding: 26px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; }
 .overview-card h2, .profile-field h4, .project-interest h4 { margin: 0; color: var(--muted); font-size: .69rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
@@ -117,8 +116,7 @@ footer strong { color: var(--ink); }
   .nav-toggle[aria-expanded="true"] span:nth-of-type(2) { transform: translateY(-4px) rotate(-45deg); }
   .overview { padding: 38px 0 40px; }
   .overview-header { margin-bottom: 26px; }
-  h1 { font-size: clamp(2.3rem, 11vw, 2.65rem); }
-  .overview-intro { font-size: .94rem; }
+  h1 { font-size: clamp(2rem, 9vw, 2.4rem); }
   .overview-card { padding: 22px; }
   .topic-chips { grid-template-columns: 1fr; }
   .topic-chips li:last-child { grid-column: auto; }
