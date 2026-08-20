@@ -1,10 +1,10 @@
 # CMU MRSD Team Website
 
-A lightweight, accessible single-page website introducing a five-person Carnegie Mellon University Master of Science in Robotic Systems Development team.
+A lightweight, accessible single-page website introducing a five-person Carnegie Mellon University Master of Science in Robotic Systems Development team. The site contains three sections: Team Intro, People, and Technical Coverage.
 
 ## Structure
 
-- `index.html` — page content, member profiles, projects, and metadata
+- `index.html` — team introduction, member profiles, technical coverage, and metadata
 - `styles.css` — responsive visual system and component styles
 - `script.js` — mobile navigation, active-section highlighting, reveal effects, and back-to-top behavior
 - `assets/icons/favicon.svg` — custom team monogram
@@ -13,19 +13,15 @@ A lightweight, accessible single-page website introducing a five-person Carnegie
 
 ## Updating profiles
 
-Member content is grouped in the `#team` section of `index.html`. Each profile is an `<article class="member-card">`; edit its summary and the native `<details>` element together so the concise and expanded information stay consistent. Omit missing fields rather than guessing.
+Member content is grouped in the `#people` section of `index.html`. Each profile is an `<article class="person">` with a one-sentence summary followed by the member's background, strengths, experience, project interests, and links. Omit missing fields rather than guessing.
 
 To add a public profile photo, place an optimized JPG or WebP in `assets/team/` (for example, `anderlin-huang.webp`) and replace the member's initials block with:
 
 ```html
-<img class="member-photo" src="assets/team/anderlin-huang.webp" alt="Portrait of Cheng-Ning (Anderlin) Huang">
+<img class="portrait" src="assets/team/anderlin-huang.webp" alt="Portrait of Cheng-Ning (Anderlin) Huang">
 ```
 
 Use a square image of at least 600 × 600 pixels and keep files below roughly 300 KB when practical.
-
-## Adding projects
-
-Selected work is grouped in the `#work` section. Copy one `.project-card`, update its title, description, tags, member attribution, and include a link only when a verified public URL is available.
 
 ## Local testing
 
