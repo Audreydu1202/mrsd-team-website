@@ -7,7 +7,6 @@ A lightweight, accessible single-page website introducing a five-person Carnegie
 - `index.html` — team overview, Team at a Glance, member profiles, and metadata
 - `styles.css` — responsive visual system and component styles
 - `script.js` — minimal mobile-navigation behavior
-- `assets/icons/favicon.svg` — custom team monogram
 - `assets/team/` — add profile photos here when approved for public use
 - `.nojekyll` — serves the static files directly on GitHub Pages
 
@@ -21,7 +20,7 @@ To add a public profile photo, place an optimized JPG or WebP in `assets/team/` 
 <img class="member-photo" src="assets/team/member-name.jpg" alt="Member Name" loading="lazy">
 ```
 
-Use a square image of at least 600 × 600 pixels and keep files below roughly 300 KB when practical.
+Use a portrait image of at least 600 px on its shortest side and keep files below roughly 300 KB when practical.
 
 ## Local testing
 

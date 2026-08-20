@@ -10,19 +10,15 @@
   <meta property="og:description" content="CMU MRSD team technical areas, project interests, and member profiles.">
   <meta property="og:url" content="https://audreydu1202.github.io/mrsd-team-website/">
   <link rel="canonical" href="https://audreydu1202.github.io/mrsd-team-website/">
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="script.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" data-header>
     <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#overview" aria-label="CMU MRSD Team home">
-        <span class="brand-mark" aria-hidden="true">M</span>
-        <span>CMU MRSD Team</span>
-      </a>
+      <a class="brand" href="#overview" aria-label="CMU MRSD Team home">CMU MRSD Team</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
         <span class="sr-only">Open navigation</span>
         <span aria-hidden="true"></span><span aria-hidden="true"></span>
@@ -36,14 +32,15 @@
 
   <main id="main">
     <section class="overview" id="overview" aria-labelledby="overview-title">
-      <div class="shell overview-grid">
-        <header class="overview-heading">
+      <div class="shell">
+        <header class="overview-header">
           <p class="eyebrow">Carnegie Mellon University · MRSD</p>
           <h1 id="overview-title">CMU MRSD Team</h1>
+          <p class="overview-intro">A five-person robotics team with complementary experience across perception, robot learning, control, manipulation, autonomous systems, and full-stack integration.</p>
         </header>
 
-        <div class="overview-content">
-          <section class="overview-block" aria-labelledby="areas-title">
+        <div class="overview-grid">
+          <section class="overview-card" aria-labelledby="areas-title">
             <h2 id="areas-title">Team Technical Areas</h2>
             <ul class="topic-chips">
               <li>3D Perception &amp; Sensor Fusion</li>
@@ -55,7 +52,7 @@
               <li>Full-Stack Robotics Systems Integration</li>
             </ul>
           </section>
-          <section class="overview-block interests" aria-labelledby="interests-title">
+          <section class="overview-card interests" aria-labelledby="interests-title">
             <h2 id="interests-title">Project Interests</h2>
             <ul class="interest-list">
               <li>Perception-Driven Stair Traversal</li>
@@ -115,7 +112,7 @@
         <div class="member-grid">
           <article class="member-card">
             <div class="member-header">
-              <img class="member-photo" src="assets/team/anderlin-huang.jpg" alt="Cheng-Ning (Anderlin) Huang" width="677" height="900" loading="lazy">
+              <div class="member-photo-wrap"><img class="member-photo" src="assets/team/anderlin-huang.jpg" alt="Cheng-Ning (Anderlin) Huang" width="677" height="900" loading="lazy"></div>
               <div><p class="member-label">Team Member 1</p><h3>Cheng-Ning <span>(Anderlin) Huang</span></h3></div>
             </div>
             <div class="profile-field"><h4>Background</h4><p>National Tsing Hua University | B.S. in Electrical Engineering and Computer Science</p></div>
@@ -126,9 +123,6 @@
               <ul class="experience">
                 <li>Microsoft Bing Maps — Debugged and optimized production geocoding pipelines for large-scale mapping systems</li>
                 <li>NTHU CV Lab — Developed Gaussian Splatting methods for 3D reconstruction in reflective scenes</li>
-                <li>NTHU IC Design Lab — Built an ASIC 3D-rendering accelerator from RTL through post-layout</li>
-                <li>NTHU Robotics Course — Developed a vision-only autonomous navigation system in ROS</li>
-                <li>NTHU ML Course — Trained a Q-learning agent in a simulated game environment</li>
               </ul>
             </details>
             <nav class="profile-links" aria-label="Cheng-Ning Huang professional links"><a href="https://hcn-1222-github-io.vercel.app/">Webpage</a><a href="https://www.linkedin.com/in/anderlinhuang">LinkedIn</a><a href="https://github.com/HCN1222">GitHub</a></nav>
@@ -136,7 +130,7 @@
 
           <article class="member-card">
             <div class="member-header">
-              <img class="member-photo" src="assets/team/yiheng-sun.jpg" alt="Yiheng Sun" width="900" height="900" loading="lazy">
+              <div class="member-photo-wrap"><img class="member-photo" src="assets/team/yiheng-sun.jpg" alt="Yiheng Sun" width="900" height="900" loading="lazy"></div>
               <div><p class="member-label">Team Member 2</p><h3>Yiheng Sun</h3></div>
             </div>
             <div class="profile-field"><h4>Background</h4><p>University of Melbourne | B.S. in Mechatronic Engineering Systems</p></div>
@@ -154,10 +148,10 @@
 
           <article class="member-card">
             <div class="member-header">
-              <img class="member-photo" src="assets/team/audrey-du.jpg" alt="Moyun (Audrey) Du" width="600" height="900" loading="lazy">
+              <div class="member-photo-wrap"><img class="member-photo" src="assets/team/audrey-du.jpg" alt="Moyun (Audrey) Du" width="600" height="900" loading="lazy"></div>
               <div><p class="member-label">Team Member 3</p><h3>Moyun <span>(Audrey) Du</span></h3></div>
             </div>
-            <div class="profile-field"><h4>Background</h4><p>Cornell University | B.S. in Computer Science</p></div>
+            <div class="profile-field"><h4>Background</h4><p>Cornell University | B.S. in Computer Science · Cornell PoRTAL Lab</p></div>
             <div class="profile-field"><h4>Top Technical Strengths</h4><ul class="strengths"><li>Robot Manipulation</li><li>Diffusion Policies</li><li>Cross-Embodiment Learning</li><li>3D Perception</li></ul></div>
             <div class="project-interest"><h4>MRSD Project Interests</h4><p>Contact-Rich Manipulation · Handrail Grasping · Handwheel Operation</p></div>
             <details>
@@ -172,7 +166,7 @@
 
           <article class="member-card">
             <div class="member-header">
-              <div class="member-photo initials" role="img" aria-label="Zean Wan initials placeholder">ZW</div>
+              <div class="member-photo-wrap initials" role="img" aria-label="Zean Wan initials placeholder">ZW</div>
               <div><p class="member-label">Team Member 4</p><h3>Zean Wan</h3></div>
             </div>
             <div class="profile-field"><h4>Background</h4><p>Boston University | B.S. in Computer Engineering</p></div>
@@ -189,7 +183,7 @@
 
           <article class="member-card">
             <div class="member-header">
-              <img class="member-photo" src="assets/team/aasta-liu.jpg" alt="Aasta Liu" width="741" height="900" loading="lazy">
+              <div class="member-photo-wrap"><img class="member-photo" src="assets/team/aasta-liu.jpg" alt="Aasta Liu" width="741" height="900" loading="lazy"></div>
               <div><p class="member-label">Team Member 5</p><h3>Aasta Liu</h3></div>
             </div>
             <div class="profile-field"><h4>Background</h4><p>National Yang Ming Chiao Tung University | B.S., Double Major in Electronics and Electrical Engineering &amp; Biomedical Engineering</p></div>
@@ -210,7 +204,7 @@
   </main>
 
   <footer>
-    <div class="shell"><strong>CMU MRSD Team</strong><span>Carnegie Mellon University</span></div>
+    <div class="shell"><strong>CMU MRSD Team</strong><span>Student team website · Not an official CMU publication</span></div>
   </footer>
 </body>
 </html>
